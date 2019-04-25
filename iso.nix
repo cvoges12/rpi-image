@@ -1,5 +1,6 @@
 { config, pkgs, ... }: 
-in {
+
+{
   nixpkgs.localSystem.system = "aarch64-linux";
   imports = [
     <nixpkgs/nixos/modules/installer/cd-dvd/sd-image-aarch64.nix>
